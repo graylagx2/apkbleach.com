@@ -1,0 +1,44 @@
+:root {
+  --font-family-Montserrat: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-family-Montserrat), sans-serif, serif;
+}
+
+.apkbleach-header {
+	width:15rem;
+	height: 4rem;
+	margin: auto;
+}
+
+#home-btn {
+    color: #e1e320;
+  background-color: #73c8f0;
+  -webkit-text-stroke: .010em #444;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-github {
+	color: #444;
+}
+
+.fa-youtube {
+	color: #444;
+}
+
+.fa-instagram {
+	color: #444;
+}
+
+.fa-reddit {
+	color: #444;
+}

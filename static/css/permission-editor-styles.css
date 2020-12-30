@@ -1,0 +1,88 @@
+:root {
+  --font-family-Montserrat: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-family-Montserrat), sans-serif, serif;
+}
+
+.perm-banner {
+	height: 5em;
+  	width: 30rem;
+  	margin: auto;
+  	display: block;
+}
+
+.perm-header {
+	width:15rem;
+	height: 4rem;
+	margin: auto;
+}
+
+.social-buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+} 
+
+
+.goose-crop {
+  height: 8rem;
+  width: 8rem;
+  float: left;
+}
+
+
+.permission-editor-form {
+	width: 100%;
+	margin: auto;
+}
+
+.badge {
+	background-color: #73c8f0;
+	color: white;
+	float: right;
+}
+
+#submit-main {
+  color: #e1e320;
+  background-color: #73c8f0;
+  -webkit-text-stroke: .5px #444;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#loader {
+  display: none;
+  color: #73c8f0;
+}
+
+.spinner-grow {
+	width: 3rem; 
+	height: 3rem;
+}
+
+.fa-github {
+	color: #444;
+}
+
+.fa-youtube {
+	color: #444;
+}
+
+.fa-instagram {
+	color: #444;
+}
+
+.fa-reddit {
+	color: #444;
+}

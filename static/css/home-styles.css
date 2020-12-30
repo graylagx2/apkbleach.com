@@ -1,0 +1,103 @@
+:root {
+  --font-family-Montserrat: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-family-Montserrat), sans-serif, serif;
+}
+
+.bleach-crop {
+  width: 100%;
+  max-width: 125px;
+  min-width: 125px;
+  height: auto;
+}
+
+.apkbleach-header {
+	width:15rem;
+	height: 4rem;
+	margin: auto;
+}
+
+.card {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.disclaimer-container {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+
+.disclaimer {
+  font-size: 1em;
+  font-style: italic;
+}
+
+#followPopUp{
+  max-width: 1024px;
+  margin: auto;
+  display: none;
+}
+
+form {
+  max-width: 1024px;
+  margin: auto;
+}
+
+#payloadNameWarning {
+  display: none;
+}
+
+.goose-crop {
+  height: 8rem;
+  width: 8rem;
+  float: left;
+}
+
+.subscribe-banner {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  display: block;
+
+}
+
+#submit-main {
+  color: #e1e320;
+  background-color: #73c8f0;
+/*  -webkit-text-stroke: .5px #444*/;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loader {
+  display: none;
+  color: #73c8f0;
+}
+
+#messageSentFlash {
+  display: none;
+  color: #e1e320;
+}
+
+#permissionsForm {
+  display: none;
+  max-width: 500px;
+  margin: auto;
+}
+
+.spinner-grow {
+	width: 3rem; 
+	height: 3rem;
+}

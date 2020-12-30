@@ -1,0 +1,64 @@
+:root {
+  --font-family-Montserrat: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-family-Montserrat), sans-serif, serif;
+}
+
+.apkbleach-header {
+	width:15rem;
+	height: 4rem;
+	margin: auto;
+}
+
+.card {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.download-container {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+.bleach-crop {
+  width: 100%;
+  max-width: 125px;
+  min-width: 125px;
+  height: auto;
+}
+
+.disclaimer {
+  font-size: 1;
+  font-style: italic;
+}
+
+
+.payload-download {
+  color: #e1e320;
+  background-color: #73c8f0;
+  /*-webkit-text-stroke: .5px #444;*/
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.social-buttons {
+  color: #444;
+}
+
+#home-btn {
+  color: #e1e320;
+  background-color: #73c8f0;
+  -webkit-text-stroke: .010em #444;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
