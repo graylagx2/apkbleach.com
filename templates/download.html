@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApkBleach</title>
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
+      integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Our personal custom css rules  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/download-styles.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="pos-f-t">
+        <nav class="navbar navbar-dark bg-dark">
+          <img
+            src="{{url_for('static', filename='images/apkbleach.png')}}"
+            alt="ApkBleach Logo"
+            class="apkbleach-header"
+            role="presentation"
+          />
+        </nav>
+      </div>
+      <div class="card text-center text-muted mt-4">
+        <div class="card-header">Complete</div>
+        <div class="card-body">
+          <h5 class="card-title">Disclaimer</h5>
+          <div class="download-container">
+            <img
+              src="{{url_for('static', filename='images/bleach.png')}}"
+              alt="Bleach Logo"
+              class="bleach-crop"
+              role="presentation"
+            />
+            <p class="card-text disclaimer">
+              This tools is free and open source for security research and only
+              to be used in controlled environments. By using this tool you
+              agree to only deploy this tool in environments you have permission
+              to do so in. You are responsible for any laws you break.
+            </p>
+          </div>
+          <form enctype="multipart/form-data" method="POST">
+            <button type="submit" class="btn btn-sm payload-download mt-2">
+              <span class="fa fa-download mr-1" role="presentation"></span>
+              {{app}}
+            </button>
+          </form>
+        </div>
+        <div class="card-footer text-muted">Follow us</div>
+      </div>
+      <div class="social-buttons text-center mt-4">
+        <a href="https://github.com/graylagx2/ApkBleach" target="_blank"
+          ><i class="fab text-muted fa-github fa-3x mr-2"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCX-P0uOzxPwFNZFD3uZmgXQ"
+          target="_blank"
+          ><i class="fab text-muted fa-youtube fa-3x mr-2"></i
+        ></a>
+        <a href="https://www.instagram.com/graylag_x2" target="_blank"
+          ><i class="fab text-muted fa-instagram fa-3x mr-2"></i
+        ></a>
+        <a href="https://www.reddit.com/user/graylagx2" target="_blank"
+          ><i class="fab text-muted fa-reddit fa-3x mr-2"></i
+        ></a>
+      </div>
+      <div class="pos-f-b">
+        <button
+          id="home-btn"
+          type="button"
+          class="btn btn-block btn-sm fixed-bottom"
+          tabindex="3"
+        >
+          <span class="fa fa-home"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Our personal javascript files -->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/home.js') }}"
+    ></script>
+
+    <!-- Font awesome icon js kit -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
