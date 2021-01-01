@@ -56,13 +56,13 @@ class ApkBleach:
         subprocess.call(
             ['bash', '-c', f'apktool -q -f d {self.payload_path} -o {self.decompiled_path} &>/dev/null'])
 
-    def delete_permissions(self, permissions): 
+    def delete_permissions(self, permissions):
         # reading in the lines of the manifest file
         with open(f'{self.decompiled_path}/AndroidManifest.xml', 'r') as manifest:
             manifest_lines = manifest.readlines()
 
-        # Removing any duplicate entries. For some reason metasploit generates this payload with a 
-        # duplicate entry of the RECORD_AUDIO permission
+        # Removing any duplicate entries. For some reason metasploit generate's
+        # this payload with a duplicate entry of the RECORD_AUDIO permission
         with open(f'{self.decompiled_path}/AndroidManifest.xml', 'w') as manifest:
             lines_seen = set()
             for line in manifest_lines:
@@ -119,16 +119,13 @@ class ApkBleach:
                     end=''
                 )
 
-        # platformBuildVersionCode="10"/platformBuildVersionCode="27"/g;s/
-        # platformBuildVersionName=\"2.3.3\"/platformBuildVersionName=\"8.1.0\"/g" 
+        # for edit_line in fileinput.input([f'{self.decompiled_path}/AndroidManifest.xml'], inplace=True):
+        #     print(edit_line.replace('platformBuildVersionCode=\"10\"',
+        #                             f'platformBuildVersionCode=\"27\"'), end='')
 
-        for edit_line in fileinput.input([f'{self.decompiled_path}/AndroidManifest.xml'], inplace=True):
-            print(edit_line.replace('platformBuildVersionCode=\"10\"',
-                                    f'platformBuildVersionCode=\"27\"'), end='')
-
-        for edit_line in fileinput.input([f'{self.decompiled_path}/AndroidManifest.xml'], inplace=True):
-            print(edit_line.replace('platformBuildVersionName=\"2.3.3\"',
-                                    f'platformBuildVersionName=\"8.1.0\"'), end='')
+        # for edit_line in fileinput.input([f'{self.decompiled_path}/AndroidManifest.xml'], inplace=True):
+        #     print(edit_line.replace('platformBuildVersionName=\"2.3.3\"',
+        #                             f'platformBuildVersionName=\"8.1.0\"'), end='')
 
         # Changing the apps name to what user provided
         for edit_line in fileinput.input([f'{self.decompiled_path}/res/values/strings.xml'], inplace=True):
