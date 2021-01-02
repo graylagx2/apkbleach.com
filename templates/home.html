@@ -160,37 +160,6 @@
       </div>
     </header>
     <div class="container-fluid">
-      <div class="card text-center text-muted">
-        <div class="card-header">Disclaimer</div>
-        <div class="card-body">
-          <div class="disclaimer-container">
-            <img
-              src="{{url_for('static', filename='images/bleach.png')}}"
-              alt="Bleach Logo"
-              class="bleach-crop"
-              role="presentation"
-            />
-            <p class="card-text disclaimer">
-              This tools is free and open source for security research and only
-              to be used in controlled environments. By using this tool you
-              agree to only deploy this tool in environments you have permission
-              to do so in. You are responsible for any laws you break.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="followPopUp">
-        <div class="card-footer text-center">
-          <h5 class="text-muted m-0">Show your support</h5>
-        </div>
-        <img
-          src="{{url_for('static', filename='images/subscribe.png')}}"
-          alt="Subscribe Logo"
-          class="subscribe-banner mt-2"
-          role="presentation"
-        />
-      </div>
-
       <form
         class="needs-validation"
         novalidate
@@ -198,6 +167,53 @@
         enctype="multipart/form-data"
         method="POST"
       >
+        <div class="card text-center text-muted">
+          <div class="card-header">Terms of use</div>
+          <div class="card-body">
+            <div class="disclaimer-container">
+              <img
+                src="{{url_for('static', filename='images/bleach.png')}}"
+                alt="Bleach Logo"
+                class="bleach-crop"
+                role="presentation"
+              />
+              <p class="card-text disclaimer">
+                This tools is free and open source for security research and
+                only to be used in controlled environments. By using this tool
+                you agree to only deploy this tool in environments you have
+                permission to do so in. You are responsible for any laws you
+                break.
+              </p>
+              <div class="form-group form-check text-center">
+                <label
+                  class="control-label"
+                  class="terms-of-use"
+                  for="termsOfUse"
+                >
+                  I agree to these terms?
+                </label>
+                <input
+                  type="checkbox"
+                  name="terms-agree"
+                  class="terms-agree-input"
+                  id="termsOfUse"
+                  reuired
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="followPopUp">
+          <div class="card-footer text-center">
+            <h5 class="text-muted m-0">Show your support</h5>
+          </div>
+          <img
+            src="{{url_for('static', filename='images/subscribe.png')}}"
+            alt="Subscribe Logo"
+            class="subscribe-banner mt-2"
+            role="presentation"
+          />
+        </div>
         <div class="form-group">
           <label class="control-label" for="payload-name"
             >Application name</label

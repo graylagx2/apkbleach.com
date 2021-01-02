@@ -37,7 +37,7 @@ var validation = Array.prototype.filter.call(forms, (form) => {
           messageElement.style.display = "block";
           messageElement.scrollIntoView({
             behavior: "smooth",
-            block: "start",
+            block: "end",
             inline: "nearest",
           });
         }
