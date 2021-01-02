@@ -22,11 +22,17 @@ import shutil
 import string
 from time import sleep
 
+# Instantiating the flask object
+app = Flask(__name__)
+
 # Instantiating the mail object
 mail = Mail()
 
-# Instantiating the flask object
-app = Flask(__name__)
+# Using a production configuration
+# app.config.from_object('config.ProdConfig')
+
+# Using a development configuration
+app.config.from_object('config.ProdConfig')
 
 app.config.update(dict(
     SESSION_COOKIE_SAMESITE='Lax',
