@@ -29,10 +29,10 @@ app = Flask(__name__)
 mail = Mail()
 
 # Using a production configuration
-# app.config.from_object('config.ProdConfig')
+app.config.from_object('config.ProdConfig')
 
 # Using a development configuration
-app.config.from_object('config.ProdConfig')
+# app.config.from_object('config.DevConfig')
 
 app.config.update(dict(
     SESSION_COOKIE_SAMESITE='Lax',
