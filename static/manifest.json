@@ -20,7 +20,7 @@
             "purpose": "any"
         }
         {
-            "src": "/static/images/icons/maskable_bleach_logo512.png",
+            "src": "/static/images/icons/bleach_logo512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
