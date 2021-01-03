@@ -196,5 +196,11 @@ def app_generation_error():
     return render_template('app-generation-error.html')
 
 
+# Routing our manifest.json for PWA capability
+@app.route('/manifest.json')
+def manifest():
+    return app.send_static_file('manifest.json')
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
