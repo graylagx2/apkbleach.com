@@ -10,7 +10,11 @@
     />
     <meta name="theme-color" content="#444444" />
 
-    <link rel="manifest" href="/manifest.json" />
+    <!-- Path to manifest.json -->
+    <link
+      rel="manifest"
+      href="{{ url_for('static', filename='manifest.json') }}"
+    />
 
     <!-- Apple safari PWA meta tag for full screen when added to homepage -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
