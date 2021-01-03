@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApkBleach</title>
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
+      integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Our personal custom css rules  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/error-styles.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="pos-f-t">
+        <nav class="navbar navbar-dark bg-dark">
+          <img
+            src="{{url_for('static', filename='images/apkbleach.png')}}"
+            alt="ApkBleach Logo"
+            class="apkbleach-header"
+            role="presentation"
+          />
+        </nav>
+      </div>
+      <div class="card text-center">
+        <div class="card-header">Woops!</div>
+        <div class="card-body">
+          <h5 class="card-title">Application Generation Error</h5>
+          <p class="card-text">
+            It seems there was a error in generating your payload application.
+            Please check your ip address was reachable and parameters are
+            correct and try again.
+          </p>
+          <button id="home-btn" class="btn btn-block">
+            <span class="fa fa-home"></span> Home
+          </button>
+        </div>
+        <div class="card-footer text-muted">
+          If the problem persists contact the developer
+        </div>
+      </div>
+      <div class="social-buttons text-center mt-4">
+        <a href="https://github.com/graylagx2/ApkBleach" target="_blank"
+          ><i class="fab fa-github fa-3x mr-2"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCX-P0uOzxPwFNZFD3uZmgXQ"
+          target="_blank"
+          ><i class="fab fa-youtube fa-3x mr-2"></i
+        ></a>
+        <a href="https://www.instagram.com/graylag_x2" target="_blank"
+          ><i class="fab fa-instagram fa-3x mr-2"></i
+        ></a>
+        <a href="https://www.reddit.com/user/graylagx2" target="_blank"
+          ><i class="fab fa-reddit fa-3x mr-2"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Our personal javascript files -->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/home.js') }}"
+    ></script>
+
+    <!-- Font awesome icon js kit -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
