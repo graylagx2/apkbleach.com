@@ -1,20 +1,21 @@
-// Variables for the payloadName warning
-var payloadNameElement = document.getElementById("payload-name");
+// Constants for the payloadName warning
+const payloadNameElement = document.getElementById("payload-name");
+const payloadNameWarn = document.getElementById("payloadNameWarning");
 
-// Variables for the form validation actions
-var forms = document.getElementsByClassName("needs-validation");
-var loaderElement = document.getElementById("loader");
-var messageElement = document.getElementById("messageSentFlash");
-var followPopUp = document.getElementById("followPopUp");
+// Constants  for the form validation actions
+const forms = document.getElementsByClassName("needs-validation");
+const loaderElement = document.getElementById("loader");
+const messageElement = document.getElementById("messageSentFlash");
+const followPopUp = document.getElementById("followPopUp");
 
 // Event listener to warn user the payload name they chose may be incorrect
 payloadNameElement.addEventListener(
   "input",
-  () => {
-    if (payloadNameElement.value.match(/^.+\.|_$/)) {
-      document.getElementById("payloadNameWarning").style.display = "block";
+  (e) => {
+    if (e.target.value.match(/^.+\.|_$/)) {
+      payloadNameWarn.style.display = "block";
     } else {
-      document.getElementById("payloadNameWarning").style.display = "none";
+      payloadNameWarn.style.display = "none";
     }
   },
   false
@@ -24,10 +25,10 @@ payloadNameElement.addEventListener(
 var validation = Array.prototype.filter.call(forms, (form) => {
   form.addEventListener(
     "submit",
-    (event) => {
+    (e) => {
       if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
+        e.preventDefault();
+        e.stopPropagation();
         form.scrollIntoView();
       }
       form.classList.add("was-validated");
