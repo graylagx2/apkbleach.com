@@ -15,7 +15,7 @@
     "icons": [
         {
             "src": "/static/images/icons/bleach_logo_ldpi.png",
-            "sizes": "459x594",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
