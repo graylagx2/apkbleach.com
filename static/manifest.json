@@ -17,7 +17,13 @@
             "src": "/static/images/icons/bleach_logo512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "maskable any"
+            "purpose": "any"
+        }
+        {
+            "src": "/static/images/icons/maskable_bleach_logo512.png",
+            "sizes": "1965x1965",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ],
     "app": {
