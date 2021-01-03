@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>ApkBleach Downloads</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ApkBleach</title>
+    <meta
+      name="description"
+      content="Obfuscates android payloads and injects icons"
+    />
+    <meta name="theme-color" content="#444444" />
+
+    <!-- Path to manifest.json -->
+    <link
+      rel="manifest"
+      href="{{ url_for('static', filename='manifest.json') }}"
+    />
+
+    <!-- App icon for ios -->
+    <link
+      rel="apple-touch-icon"
+      href="{{ url_for('static', filename='images/icons/bleach_logo512.png') }}"
+    />
+
+    <!-- Apple safari PWA meta tag for full screen when added to homepage -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Android/Chrome PWA meta tag for full screen when added to homepage -->
+    <meta name="mobile-web-app-capable" content="yes" />
 
     <!-- Bootstrap css -->
     <link
