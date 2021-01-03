@@ -21,7 +21,7 @@
         }
         {
             "src": "/static/images/icons/maskable_bleach_logo512.png",
-            "sizes": "1965x1965",
+            "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         }
