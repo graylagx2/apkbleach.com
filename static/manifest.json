@@ -14,7 +14,7 @@
     "background_color": "#444444",
     "icons": [
         {
-            "src": "/static/images/icons/bleach_logo_ldpi.png",
+            "src": "/static/images/icons/bleach_logo512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
