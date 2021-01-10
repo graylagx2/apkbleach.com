@@ -3,6 +3,7 @@
 Visit: https://apkbleach.com
 
 ![Screen shot of sofware image](https://github.com/graylagx2/Images/blob/master/bleach.png | width=100)
+<img src="https://github.com/graylagx2/Images/blob/master/bleach.png width="200" height="400" />
 
 A central version of ApkBleach on a web page to eliminate install issues of apkbleach.py accross differing systems.
 
