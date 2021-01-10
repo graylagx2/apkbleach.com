@@ -2,7 +2,7 @@
 
 Visit: https://apkbleach.com
 
-![Screen shot of sofware image](https://github.com/graylagx2/Images/blob/master/bleach.png)
+![Screen shot of sofware image](https://github.com/graylagx2/Images/blob/master/bleach_2_10.png)
 
 A central version of ApkBleach on a web page to eliminate install issues of apkbleach.py accross differing systems.
 
